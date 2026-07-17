@@ -15,7 +15,7 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          # 同时上传根目录index.html + docs文件夹博客内容
+          # path: '.' 代表打包仓库全部文件（根目录index.html + docs文章全部发布）
           path: '.'
       - name: Deploy to GitHub Pages
         id: deployment
